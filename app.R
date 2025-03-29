@@ -11,7 +11,7 @@ weather_data <- weather_data %>%
 
 # Define UI
 ui <- fluidPage(
-  titlePanel("WeatherXplore:  Weather Visualization"),
+  titlePanel("WeatherXplore: Interactive  Weather Visualization"),
   
   sidebarLayout(
     sidebarPanel(
