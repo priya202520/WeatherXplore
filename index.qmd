@@ -1,0 +1,114 @@
+---
+format: html
+---
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dff1f9;
+  font-family: 'Inter', sans-serif;
+  color: #1d3557;
+  overflow: hidden;  /* No scroll bar */
+  box-sizing: border-box;
+}
+
+section.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 2rem;  /* Reduced top space */
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.1rem;
+  margin: 0 0 1.2rem 0;  /* No top margin */
+}
+
+p {
+  max-width: 960px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 auto 1rem auto;
+}
+
+/* Shrink the gap above bullet list */
+p + ul.feature-list {
+  margin-top: 0.4rem;
+}
+
+ul.feature-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+  max-width: 760px;
+  text-align: left;
+}
+
+ul.feature-list li {
+  font-size: 0.98rem;
+  margin: 0.6rem 0;
+  padding-left: 2rem;
+  position: relative;
+}
+
+ul.feature-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  color: white;
+  background-color: #00b4d8;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: #00b4d8;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.cta-button:hover {
+  background-color: #0077b6;
+}
+</style>
+
+<section class="hero">
+
+<h1>WeatherXplore: Uncovering Singapore’s Weather Patterns Through Visual Analytics</h1>
+
+<p>
+WeatherXplore is an interactive Shiny web application designed to visualize and explore historical weather data from the Meteorological Service Singapore (MSS). Targeting researchers, policymakers, and the general public, our project aims to democratize access to weather insights and support climate-related decisions.
+</p>
+
+<p style="margin-bottom: 0.3rem;"><strong>WeatherXplore empowers users to:</strong></p>
+
+<ul class="feature-list">
+  <li>Analyze trends in temperature and rainfall (2020–2024)</li>
+  <li>Identify regions and stations experiencing extreme events</li>
+  <li>Compare different interpolation methods (IDW and Kriging)</li>
+  <li>Forecast future temperature or rainfall using historical data</li>
+</ul>
+
+<p>
+Whether you’re assessing climate change impacts or simply planning ahead, WeatherXplore is your visual weather companion.
+</p>
+
+<a class="cta-button" href="https://weatherxplore.shinyapps.io/weatherxplore/" target="_blank">Launch App</a>
+
+</section>

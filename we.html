@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherXplore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      height: 100%;
+      color: #1d3557;
+      background-color: #dff1f9;
+    }
+    header {
+      background-color: #1d3557;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+    .hero-section {
+      padding-top: 100px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: #dff1f9;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #1d3557;
+    }
+    h2 {
+      font-weight: 300;
+      font-size: 1.2rem;
+      max-width: 800px;
+      color: #1d3557;
+    }
+    .cta a {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: #00b4d8;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong style="color: white;">WeatherXplore</strong></div>
+    <nav class="nav-links">
+      <a href="#team">Team</a>
+      <a href="#proposal">Project Proposal</a>
+      <a href="#modules">Modules</a>
+      <a href="#shiny">ShinyApp</a>
+      <a href="#poster">Poster</a>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <h1>The WeatherXplorers</h1>
+    <h2>Step into our atmospheric archive, where we unveil the secrets of our collective journey through the Visual Analytics & Applications module at Singapore Management University. Together, we explore winds of insight, storms of data, and sunshine moments scattered throughout our interactive project: <strong>WeatherXSG</strong>.<br><br>
+    Within these meteorological musings, we forecast with clarity, predict with precision, and visualize with purpose. Join us in this weathered quest — where every chart glows like lightning, every dataset paints Singapore’s climate, one plot at a time.</h2>
+    <div class="cta">
+      <a href="#shiny">Launch App</a>
+    </div>
+  </section>
+</body>
+</html>
